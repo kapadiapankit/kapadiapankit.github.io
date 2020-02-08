@@ -1,5 +1,6 @@
 <?php
 include "constants.php";
+include "functions.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +17,8 @@ include "constants.php";
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/font-awesome.min.css" />
 	<link rel="stylesheet/less" type="text/css" href="assets/stylesheets/style.less" />
 	<!-- https://coolors.co/2d3142-bfc0c0-ffffff-ef8354-4f5d75 -->
+	<!-- new suggestions -->
+	<!-- https://coolors.co/f79f79-adc698-f7d08a-fffcf7-e3f09b -->
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -57,7 +60,7 @@ include "constants.php";
 					<div class="col-11 section-title-padding">
 						<div class="section-title">Intro</div>
 						<h1 class="welcome-text typeIt">
-							I'm <span>Pankit Kapadia.</span> A creative <span>UI/Front-end Developer</span> with five years of industry experience, specialising in developing pixel perfect website very quickly without sacrificing quality.
+							I'm <span>Pankit Kapadia.</span> A creative <span>UI/Front-end Developer</span> with <?php echo getDateDifference(new DateTime("2012-02-22"), new DateTime("now")); ?> of industry experience, specialised in developing responsive web applications.
 						</h1>
 					</div>
 				</div>
